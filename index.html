@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ind-removebg-preview.png" type="image/x-icon">
+    <title>TravelEX</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+
+    #create {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        z-index: -1;
+       
+    }
+
+    @media(max-aspect-ratio:20/9) {
+        #create {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media(min-aspect-ratio:20/9) {
+        #create {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .outlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+       
+    }
+
+    .text {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        top: -10px;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text h1 {
+        transition: 0.47s ease-in-out;
+        display: block;
+    }
+
+    .text h1:hover {
+        -webkit-text-stroke: 2px white;
+        color: transparent;
+    }
+
+    .text1 a {
+        text-decoration: none;
+        color: white;
+        font-weight: 200;
+        font-size: 28px;
+        display: inline-block;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 18px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 50px;
+    }
+    nav{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.536);
+        
+        
+    }
+nav img{
+    height: 70px;
+    width: 70px;
+    padding-left: 15px;
+}
+nav ul{
+    padding-right: 30px;
+}
+nav ul li{
+    display:inline-block;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    font-size: 17px;
+}
+.t{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+.t:hover{
+    
+    background-color: rgb(240, 76, 183);
+    border-radius: 40px;
+}
+
+#log{
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+    background-color: deeppink;
+   border-top-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+    
+}
+.comp{
+    position: absolute;
+    left: 99px;
+    font-size: 22px;
+    color: white;
+    font-family: 'Petit Formal Script', cursive;
+}
+</style>
+
+<body>
+    <header>
+        <video autoplay loop muted id="create">
+
+            <source src="beach.mp4" type="video/mp4">
+        </video>
+    </header>
+    <div class="outlay"></div>
+    <div class="text">
+        <h1>
+            INDIA 
+        </h1>
+        <div class="text1">
+            <a href="https://www.google.com/search?q=india&rlz=1C1ONGR_enIN998IN998&oq=india&aqs=chrome..69i57j46i39j69i59j69i60j69i61l2j69i60l2.1598j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
+                Explore
+        </a>
+        </div>
+    </div>
+    <nav>
+        <img src="ind-removebg-preview.png">
+        <div class="comp"><h3>Travel EX</h3></div>
+        
+        <ul>
+            <li><a class="t" href="#">Home</a></li>
+            <li ><a class="t" href="#">Services</a></li>
+            <li><a class="t" href="#">Package</a></li>
+            <li><a class="t" href="#">About</a></li>
+            <li><a id="log" href="login.html" target="_top">Login / Sign up</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
